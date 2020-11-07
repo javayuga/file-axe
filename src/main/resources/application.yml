@@ -1,0 +1,5 @@
+fileaxe:
+  chunkSize: 800000
+
+storage:
+  location: "storage"
