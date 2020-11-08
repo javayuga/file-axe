@@ -1,8 +1,8 @@
-package br.dev.marcosilva.fileaxe.csv;
+package br.dev.marcosilva.fileaxe.axe;
 
-import br.dev.marcosilva.fileaxe.interfaces.FileAxer;
-import br.dev.marcosilva.fileaxe.interfaces.FileAxingStrategy;
-import br.dev.marcosilva.fileaxe.interfaces.FilePreAxingStrategy;
+import br.dev.marcosilva.fileaxe.axe.interfaces.FileAxer;
+import br.dev.marcosilva.fileaxe.axe.interfaces.FileAxingStrategy;
+import br.dev.marcosilva.fileaxe.axe.interfaces.FilePreAxingStrategy;
 import lombok.Builder;
 import lombok.Setter;
 
@@ -40,7 +40,7 @@ public class CSVAxerImpl implements FileAxer {
 
             if (content.toString().length()>=chunkSize){
                 fileAxingStrategy.processChunk(
-                        bucketIdentifier, String.format("%04d", sequential), content.toString().getBytes());
+                        bucketIdentifier, sequential, content.toString().getBytes());
 
                 sequential++;
                 content = new StringBuilder();
@@ -52,7 +52,7 @@ public class CSVAxerImpl implements FileAxer {
 
         if (content.toString().length()>=0) {
             fileAxingStrategy.processChunk(
-                    bucketIdentifier, String.format("%04d", sequential), content.toString().getBytes());
+                    bucketIdentifier, sequential, content.toString().getBytes());
         }
 
 

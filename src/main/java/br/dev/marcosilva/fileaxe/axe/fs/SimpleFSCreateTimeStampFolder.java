@@ -1,6 +1,6 @@
-package br.dev.marcosilva.fileaxe.csv.fs;
+package br.dev.marcosilva.fileaxe.axe.fs;
 
-import br.dev.marcosilva.fileaxe.interfaces.FilePreAxingStrategy;
+import br.dev.marcosilva.fileaxe.axe.interfaces.FilePreAxingStrategy;
 import br.dev.marcosilva.fileaxe.storage.FileSystemStorageService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;

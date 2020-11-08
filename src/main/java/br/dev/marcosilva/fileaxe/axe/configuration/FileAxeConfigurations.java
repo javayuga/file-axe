@@ -1,4 +1,4 @@
-package br.dev.marcosilva.fileaxe.configuration;
+package br.dev.marcosilva.fileaxe.axe.configuration;
 
 import lombok.Getter;
 import lombok.Setter;

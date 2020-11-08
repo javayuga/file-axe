@@ -1,4 +1,4 @@
-package br.dev.marcosilva.fileaxe.interfaces;
+package br.dev.marcosilva.fileaxe.axe.interfaces;
 
 import java.io.IOException;
 import java.io.InputStream;

@@ -1,5 +1,15 @@
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+
+    producer:
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+
+    numPartitions: 3
+    fileChunks: file-chunks
+
 fileaxe:
-  chunkSize: 800000
+  chunkSize: 600000
 
 storage:
   location: "storage"
