@@ -12,7 +12,7 @@
 	<artifactId>fileaxe</artifactId>
 	<version>0.0.6</version>
 	<name>fileaxe</name>
-	<description>Break large CSV files into smaller chunks for processing</description>
+	<description>Library for breaking large (CSV) files into smaller chunks for processing</description>
 
 	<properties>
 		<java.version>11</java.version>
